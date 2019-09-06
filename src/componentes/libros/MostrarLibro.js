@@ -95,6 +95,7 @@ class MostrarLibro extends Component {
 
           {/* Boton para solicitar un prestamo de libro */}
           {btnPrestamo}
+
           {/* Muestra las personas que tienen los libros */}
           <h3 className="my-2">Personas que tienen el Libro Prestado</h3>
           {libro.prestados.map(prestado => (
@@ -109,7 +110,7 @@ class MostrarLibro extends Component {
                 </p>
                 <p>
                   <span className="font-weight-bold">Carrera:</span> {""}
-                  {prestado.codigo}
+                  {prestado.carrera}
                 </p>
                 <p>
                   <span className="font-weight-bold">Fecha de solicitud:</span>{" "}
